@@ -16,11 +16,6 @@ def organize(path):
     return True
        
 pa = input("Enter the path here : ")
-if pa in os.listdir():    
-    if organize(pa):
-        print("File Organized Successfully!!! :)")
-    else:
-        print("Invalid Path")
-else:
-    print("Invalid Path")
-
+organize(pa)
+print("File Organized Successfully!!! :)")
+   
