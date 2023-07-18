@@ -69,10 +69,10 @@ def G_L():
         A.append(chr(i))
     for i in range(97,123):
         a.append(chr(i))
-    no=(input("\n\n\t\t\tEnter the no of players : "))
-    if no in (A or a):
-        print("Invalid input")
-        quit()
+    try:
+        no=(input("\n\n\t\t\tEnter the no of players : "))
+    except:
+        print("Invalid Input")
     else:
         no=int(no)
         players_counts=[]
